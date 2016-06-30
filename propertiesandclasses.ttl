@@ -1,0 +1,35 @@
+@prefix vd: <http://dilab77.ionio.gr/swp/dragonas/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+vd:KATHIGITIS rdf:type rdfs:Class .
+vd:KATHIGITIS rdfs:subClassOf foaf:Person .
+vd:MATHIMA rdf:type rdfs:Class .
+vd:AITHOYSA rdf:type rdfs:Class .
+vd:DIALEKSH rdf:type rdfs:Class .
+
+vd:didasketaiMathima rdf:type rdf:Property .
+vd:didasketaiMathima rdfs:domain vd:DIALEKSH .
+vd:didasketaiMathima rdfs:range vd:MATHIMA .
+
+vd:ginetaiApo rdf:type rdf:Property .
+vd:ginetaiApo rdfs:domain vd:DIALEKSH .
+vd:ginetaiApo rdfs:range vd:KATHIGITIS .
+
+vd:ginetaiStinAthousa rdf:type rdf:Property .
+vd:ginetaiStinAthousa rdfs:domain vd:DIALEKSH .
+vd:ginetaiStinAthousa rdfs:range vd:AITHOUSA .
+
+vd:ksekinaeiWra rdf:type rdf:Property .
+vd:ksekinaeiWra rdf:domain vd:DIALEKSH .
+vd:ksekinaeiWra rdf:range xsd:Time .
+
+vd:ligeiWra rdf:type rdf:Property .
+vd:ligeiWra rdf:domain vd:DIALEKSH .
+vd:ligeiWra rdf:range xsd:Time .
+
+vd:ginetaiTinMera rdf:type rdf:Property .
+vd:ginetaiTinMera rdf:domain vd:DIALEKSH .
+vd:ginetaiTinMera rdf:range rdfs:Literal .
